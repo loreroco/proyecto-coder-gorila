@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*!--------------HEADER----------!*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #000;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header a {
+    color: blanchedalmond;
+    padding: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+header a:hover {
+    color: #f1c40f;
+}
+/*!----------------Index------------!*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    background-color: rgba(83, 83, 83, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+}
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    background-color: rgba(83, 83, 83, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.ubicacion iframe {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .ubicacion iframe {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+
+/*!----------------MAIN------------!*/
+h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+main {
+    background-image: url("../img/ban.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 90vh;
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 90vh;
+    padding: 40px 0;
+}
+
+.ubicacion h2 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/*!-----------GASTRONOMIA--------------*/
+
+.gastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.gastro h1 {
+    margin-bottom: 50px;
+    color: rgb(184, 183, 181);
+}
+
+.gastro .card {
+    margin: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gastro h4 {
+    font-size: 30px;
+    margin: 20px 0;
+    background-color: black;
+    color: beige;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gastro a {
+    background-color: black;
+    color: beige;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gastro a:hover {
+    background-color: #f1c40f;
+    color: black;
+}
+
+/*?-----------TRAGOS--------------?*/
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    padding: 50px;
+    background-color: rgba(182, 179, 179, 0.527);
+}
+
+.barra h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.barra .grid-tragos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px; 
+    margin-bottom: 40px;
+}
+
+.barra .trago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.barra h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.barra h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.barra img {
+    height: 330px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.menu-tragos {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-tragos a {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+/*,-----------EVENTOS--------------?*,
+
+
+/*?-----------CONTACTO--------------?*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    color: rgba(255, 255, 255, 0.781);
+    height: 75vh;
+}
+
+.contact form {
+    border: 3px solid;
+    width: 200px;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+
+/*!----------------FOOTER----------------*/
+
+.redes img {
+    margin-right: 30px;
+
+}
+
+.info {
+    text-align: right;
+}
+
+.info p {
+    margin-bottom: 5px;
+}
